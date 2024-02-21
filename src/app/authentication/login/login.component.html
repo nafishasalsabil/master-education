@@ -1,0 +1,65 @@
+<section style="height: 100%;">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center custom-h">
+            <div class="col-xl-6 col-lg-6 col-md-6 d-none d-lg-block">
+                <img src="assets/images/login.svg" class="img-fluid" alt="Sample image">
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 px-2">
+                <form (ngSubmit)="onSubmit()" #f="ngForm">
+                    <div class="form-outline mb-4">
+                        <span class="h1 fw-bold d-block" style="margin-top: 10px;">Welcome Back! </span>
+                        <hr class="mt-0" style="width:100% ; color: rgb(231, 231, 231);" />
+                    </div>
+
+
+                    <button class="btn google-btn mb-2"><span> <img src="assets/images/google.svg" alt="Sample image"
+                                class="mx-2"></span>Continue with Google</button>
+                    <div class="or-cls d-flex justify-content-center mb-4 mt-3">
+                        <hr />
+                        <span class="mx-3 align-self-center or-text">or sign in with email</span>
+                        <hr />
+                    </div>
+
+                    <div class="form-outline mb-4">
+                        <input type="text" id="username" class="form-control form-control-lg" ngModel name="username"
+                            required #username="ngModel" placeholder="Enter e-mail" />
+                        <span class="help-block" *ngIf="!username.valid && username.touched">Please enter a valid
+                            e-mail address!</span>
+                    </div>
+
+
+                    <div class="form-outline mb-1">
+                        <input type="password" id="password" class="form-control form-control-lg"
+                            placeholder="Enter password" ngModel name="password" required #password="ngModel" />
+                        <span class="help-block" *ngIf="!password.valid && password.touched">Please enter a valid
+                            password!</span>
+                    </div>
+                    <div class="forgp mb-3">
+                        <span class="forg-pass">Forgot Password?</span>
+                    </div>
+
+
+                    <div class="d-grid gap-2">
+                        <button class="btn login-btn" type="submit" [disabled]="f.invalid">Sign In</button>
+                        <span class="help-block" *ngIf="show">Please enter a valid
+                            username or password!</span>
+                        <!-- <div *ngIf="isLoading">
+                  <app-loader></app-loader>
+                </div> -->
+
+                    </div>
+
+                </form>
+                <div class="signup mt-3">
+                    <span class="">Haven't Signed up yet?</span>
+                    <span class="linksu">Sign Up</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</section>

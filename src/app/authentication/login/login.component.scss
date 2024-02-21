@@ -1,0 +1,62 @@
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+.help-block {
+    color: red;
+}
+
+.login-btn {
+    background-color: #261E83;
+    color: white;
+    font-size: large;
+}
+.container-fluid{
+    height: 100%;
+    padding: 2rem;
+}
+.google-btn{
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 20px;
+    width: 100%;
+}
+.or-cls{
+    color: rgb(221, 221, 221);
+}
+hr{
+    width: 30%;
+    
+}
+.forg-pass{
+    text-align: right;
+    cursor: pointer;
+}
+.forg-pass:hover{
+    color: #261E83;
+    text-decoration: underline;
+}
+.forgp{
+    display: flex;
+    justify-content: flex-end;
+}
+.signup{
+    text-align: center;
+    color: rgb(169, 169, 169);
+}
+.linksu{
+    text-decoration: underline;
+}
+.linksu:hover{
+    color: #261E83;
+    cursor: pointer;
+}
+.or-text{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.custom-h{
+    height: 85vh;
+}
+::placeholder {
+    color: rgb(179, 179, 179);
+  }

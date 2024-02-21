@@ -1,0 +1,43 @@
+.navbar{
+    background-color: #261E83;
+}
+.logo{
+    width: 6vh;
+}
+#navbarNav{
+    justify-content: flex-end;
+    
+}
+.nav-link{
+    color:white
+}
+.nav-link.active{
+    color: white;
+    font-weight: bold;
+}
+.log{
+    color: white;
+    border: 1px solid white;
+}
+.log:hover{
+    background-color: #EFA136;
+    color:black;
+    border-color: #EFA136;
+}
+.row{
+    width: 100%;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.nav-link{
+    cursor: pointer;
+}
+.active{
+    border-bottom: 1px solid white;
+}
+.user-icon{
+    width: 25px;
+    height: auto;
+    cursor: pointer;
+}

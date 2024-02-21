@@ -1,0 +1,29 @@
+.help-block{
+    color: red;
+}
+.button-container{
+    text-align: center;
+}
+.signup-btn {
+    background-color: #261E83;
+    color: white;
+    font-size: large;
+    width: 100%;
+}
+.login-text{
+    text-align: center;
+    color: rgb(179, 179, 179);
+}
+.lgn{
+    text-decoration: underline;
+}
+.lgn:hover{
+    color: #261E83;
+    cursor: pointer;
+}
+.custom-h{
+    height: 85vh;
+}
+::placeholder {
+    color: rgb(179, 179, 179);
+  }
