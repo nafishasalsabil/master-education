@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,12 +15,15 @@ export class LoginComponent implements OnInit{
   user: any;
   isLoading: boolean;
   tokenObj:any;
-  constructor(){}
+  constructor(private router:Router){}
   ngOnInit(): void {
     throw new Error('Method not implemented.');
   }
   onSubmit(){
     
+  }
+  gotoSignUp(){
+    this.router.navigate(["/signup"])
   }
 
 }

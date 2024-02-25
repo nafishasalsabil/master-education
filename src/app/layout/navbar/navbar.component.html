@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-6">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
                     <img src="/assets/images/edu-logo.jpg" alt="" class="d-inline-block align-text-top logo">
                   </a>
             </div>
@@ -13,22 +13,23 @@
                   <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
+                        <a class="nav-link" routerLink="/home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" routerLink="/home" routerLinkActive="active">About Us</a>
+                        <a class="nav-link" (click)="navigateAndScroll('about-us')" routerLinkActive="active">About Us</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link" (click)="navigateAndScroll('services')" routerLinkActive="active">Services</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" routerLink="/home" routerLinkActive="active">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" routerLink="/home" routerLinkActive="active">Destinations</a>
+                        <a class="nav-link" (click)="navigateAndScroll('destinations')" routerLinkActive="active">Destinations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"routerLink="/home" routerLinkActive="active">Testimonials</a>
+                        <a class="nav-link" (click)="navigateAndScroll('testimonials')" routerLinkActive="active">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/home" routerLinkActive="active">FAQs</a>
+                        <a class="nav-link" (click)="navigateAndScroll('faqs')"  routerLinkActive="active">FAQs</a>
                     </li>
                     </ul>
                    

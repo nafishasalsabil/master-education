@@ -13,6 +13,6 @@ import { NavbarComponent } from './navbar.component';
 @NgModule({
   declarations: [NavbarComponent,],
   exports: [NavbarComponent],
-  imports: [],
+  imports: [RouterModule],
 })
 export class NavbarModule {}
