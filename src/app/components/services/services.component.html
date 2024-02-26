@@ -1,0 +1,22 @@
+<div class="px-2 mb-4">
+    <h1 class="h1 text-center" id="pageHeaderTitle">Our Services</h1>
+    <hr style="color: rgb(222, 222, 222);" />
+</div>
+<div class="dark">
+    <div class="container-fluid py-2">
+        <article class="postcard dark blue" *ngFor="let item of serv; let i = index">
+            <a class="postcard__img_link" href="#">
+                <img class="postcard__img" [src]="item.imageUrl" alt="Image Title" />
+            </a>
+            <div class="postcard__text">
+                <h1 class="postcard__title blue"><a href="#">{{item.title}}</a></h1>
+                <div class="postcard__bar"></div>
+                <div class="postcard__preview-txt">{{item.description}}</div>
+                <div class="postcard__tagbox">
+                    <button class="btn btn-primary">{{item.buttonText}}</button>
+                </div>
+            </div>
+        </article>
+
+    </div>
+</div>

@@ -1,0 +1,56 @@
+[
+    {
+        "title":"Educational Assessment",
+        "description":"Our expert team undertakes thorough diagnostic evaluations, capturing a holistic view of students' educational landscapes, encompassing their needs, ambitions, and inherent capabilities. This meticulous approach enables us to tailor educational trajectories that align precisely with each student's unique profile, fostering an environment of personalized academic growth.",
+        "imageUrl":"assets/images/assess.jpg",
+        "buttonText":"View Plans"
+    },
+    {
+        "title":"Professional Academic Guidance & Mentorship",
+        "description":"Leveraging years of expertise, our seasoned mentors engage in bespoke counseling sessions, offering nuanced insights and steadfast support. This empowers students to navigate the complexities of their academic journeys with confidence, ensuring well-informed, strategic decisions that pave the way for future success.",
+        "imageUrl":"assets/images/counselling.jpg",
+        "buttonText":"Book Counselling"
+    },
+    {
+        "title":"International Academic Placement Solutions",
+        "description":" Our extensive network, spanning continents from North America to Asia, opens doors to some of the world's most esteemed universities. We specialize in facilitating seamless admission processes, connecting students with ideal institutions in the USA, UK, Canada, Australia, NZ, Europe, the UAE, and Malaysia, thereby unlocking global educational opportunities.",
+        "imageUrl":"assets/images/placement.jpg",
+        "buttonText":"Explore Places"
+    },
+    {
+        "title":"Visa Application & Immigration Support",
+        "description":" We streamline the intricate visa acquisition journey, handling every detail from application paperwork to embassy liaisons, ensuring a smooth, stress-free passage. Our expertise in navigating immigration protocols demystifies the process, allowing students to focus on their academic aspirations.",
+        "imageUrl":"assets/images/visa.jpg",
+        "buttonText":"Apply"
+    },
+    {
+        "title":"Air Ticket Arrangement & Travel Logistics",
+        "description":" Our dedicated travel logistics team provides end-to-end support in air ticketing and itinerary planning, ensuring a seamless transit experience. From optimal flight selections to comprehensive travel arrangements, we ensure every journey is perfectly orchestrated.",
+        "imageUrl":"assets/images/ticket.jpg",
+        "buttonText":"Book"
+    },
+    {
+        "title":"Airport Pick-Up & Drop-Off Services",
+        "description":"Offering more than just a ride, our reliable airport transfer services guarantee a warm welcome and a safe, comfortable journey to or from the airport. This personalized touch adds a layer of reassurance and convenience to the student's travel experience.",
+        "imageUrl":"assets/images/pickup.jpg",
+        "buttonText":"Book"
+    },
+    {
+        "title":"Accommodation Assistance",
+        "description":"We go beyond standard accommodation searches to find spaces that resonate with individual preferences and needs, ensuring a home away from home near academic institutions. Our commitment to comfort and convenience is paramount, making student stays both enjoyable and conducive to study.",
+        "imageUrl":"assets/images/hostel.jpg",
+        "buttonText":"View Plans"
+    },
+    {
+        "title":"Targeted Language Certification Preparation",
+        "description":"Our specialized preparation programs for IELTS, TOEFL, and PTE are designed to enhance language proficiency, equipping students with the necessary skills to excel in these critical examinations. With expert guidance and tailored resources, we aim to boost confidence and ensure test-taking success.",
+        "imageUrl":"assets/images/ielts.jpg",
+        "buttonText":"View Plans"
+    },
+    {
+        "title":"Scholarship & Financial Aid Guidance",
+        "description":"Navigating the landscape of scholarships and financial aid, we provide comprehensive assistance to uncover and secure financial support options. Our aim is to alleviate the financial challenges of international study, making quality education more accessible.",
+        "imageUrl":"assets/images/scholarship.jpg",
+        "buttonText":"View Plans"
+    }
+]
