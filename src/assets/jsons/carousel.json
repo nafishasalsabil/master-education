@@ -1,0 +1,17 @@
+[
+    {
+        "title":"United States of America",
+        "description":"Discover academic excellence in the USA, home to renowned universities, diverse cultures, and vast research opportunities.",
+        "url":"assets/images/nyc.jpg"
+    },
+    {
+        "title":"United Kingdom",
+        "description":"Explore the rich academic heritage of the United Kingdom, a hub for prestigious universities, historical learning centers, and a global student body.",
+        "url":"assets/images/uk.jpg"
+    },
+    {
+        "title":"Canada",
+        "description":"Dive into Canada's inclusive and innovative education system, known for its top-tier universities, supportive academic environment, and multicultural campuses.",
+        "url":"assets/images/canada.jpg"
+    }
+]

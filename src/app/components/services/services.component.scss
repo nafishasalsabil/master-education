@@ -1,6 +1,6 @@
 $main-red: #bd150b !default;
 $main-red-rgb-015: rgba(189, 21, 11, 0.1) !default;
-$main-blue: #0076bd !default;
+$main-blue: #4637e8 !default;
 $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
 
 
@@ -42,6 +42,7 @@ a:hover {
     overflow: hidden;
     position: relative;
     color: #ffffff;
+    cursor: pointer;
 
     &.dark {
         background-color: #261E83;
@@ -144,6 +145,15 @@ a:hover {
     &:hover .postcard__bar {
         width: 100%;
     }
+}
+
+.btn-act{
+    border-color: white;
+    color: white;
+}
+.btn-act:hover{
+    background-color: #4637e8;
+    
 }
 
 @media screen and (min-width: 769px) {

@@ -30,6 +30,12 @@
 .navbar-collapse{
     justify-content: flex-end;
 }
+@media (min-width: 992px){
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+}
+}
 .nav-link{
     cursor: pointer;
 }
@@ -40,4 +46,7 @@
     width: 25px;
     height: auto;
     cursor: pointer;
+}
+.container-fluid{
+    justify-content: space-between;
 }

@@ -11,4 +11,10 @@ export class DashboardService {
   getServices(): Observable<any> {
     return this.http.get('/assets/jsons/services.json');
   }
+  getAboutUs(): Observable<any> {
+    return this.http.get('/assets/jsons/about-us.json');
+  }
+  getCarousel(): Observable<any> {
+    return this.http.get('/assets/jsons/carousel.json');
+  }
 }
