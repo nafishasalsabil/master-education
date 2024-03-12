@@ -13,7 +13,7 @@
                 <div class="postcard__bar"></div>
                 <div class="postcard__preview-txt">{{item.description}}</div>
                 <div class="postcard__tagbox">
-                    <button class="btn btn-act">{{item.buttonText}}</button>
+                    <button class="btn btn-act" (click)="navigateTo(item.title)">{{item.buttonText}}</button>
                 </div>
             </div>
         </article>

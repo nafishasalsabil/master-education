@@ -12,9 +12,10 @@
                         <hr class="mt-0" style="width:100% ; color: rgb(231, 231, 231);" />
                     </div>
 
-
+                    <div google-signin-button scope="profile email" (user)="onSignInSuccess($event)">
                     <button class="btn google-btn mb-2"><span> <img src="assets/images/google.svg" alt="Sample image"
                                 class="mx-2"></span>Continue with Google</button>
+                                </div>
                     <div class="or-cls d-flex justify-content-center mb-4 mt-3">
                         <hr />
                         <span class="mx-3 align-self-center or-text">or sign in with email</span>
@@ -22,9 +23,9 @@
                     </div>
 
                     <div class="form-outline mb-4">
-                        <input type="text" id="username" class="form-control form-control-lg" ngModel name="username"
-                            required #username="ngModel" placeholder="Enter e-mail" />
-                        <span class="help-block" *ngIf="!username.valid && username.touched">Please enter a valid
+                        <input type="text" id="email" class="form-control form-control-lg" ngModel name="email"
+                            required #email="ngModel" placeholder="Enter e-mail"  email/>
+                        <span class="help-block" *ngIf="!email.valid && email.touched">Please enter a valid
                             e-mail address!</span>
                     </div>
 
@@ -41,7 +42,7 @@
 
 
                     <div class="d-grid gap-2">
-                        <button class="btn login-btn" type="submit" [disabled]="f.invalid">Sign In</button>
+                        <button class="btn login-btn" type="submit" [disabled]="f.invalid" >Sign In</button>
                         <span class="help-block" *ngIf="show">Please enter a valid
                             username or password!</span>
                         <!-- <div *ngIf="isLoading">

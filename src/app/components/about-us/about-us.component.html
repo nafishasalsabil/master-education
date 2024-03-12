@@ -1,18 +1,18 @@
 <div class="contaier-fluid p-3">
     <h1 class="mt-4">About Us</h1>
     <hr style="color: #49419b;" class="mt-0"/>
-    <p class="px-5">{{aboutInfo.intro}}</p>
+    <p class="px-5">{{aboutInfo?.intro}}</p>
 <div class="mission-container mt-4">
     <div class="row">
         <div>
-            <img src="/assets/images/write.jpg" class="left-img"> 
+            <img [src]="aboutInfo?.url" class="left-img" loading="lazy"> 
         </div>
         
     </div>
     <div class="row mt-5 px-4">
             <h4>Our Mission</h4>
             <hr style="color: #49419b;"/>
-            <p>{{aboutInfo.mission}}</p>
+            <p>{{aboutInfo?.mission}}</p>
       
     </div>
    

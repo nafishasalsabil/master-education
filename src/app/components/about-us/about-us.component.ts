@@ -12,7 +12,7 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
     this.dbs.getAboutUs().subscribe({
       next:(res)=>{
-        this.aboutInfo = res;
+        this.aboutInfo = res[0];    
       }
     })
   }

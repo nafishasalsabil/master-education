@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 
 import { NavbarComponent } from './navbar.component';
+import { ShowLoggedInStatusDirective } from 'src/app/shared/directives/show-logged-in-status.directive';
 
 // const routes: Routes = [
 //   {
@@ -11,7 +12,7 @@ import { NavbarComponent } from './navbar.component';
 //   },
 // ];
 @NgModule({
-  declarations: [NavbarComponent,],
+  declarations: [NavbarComponent,ShowLoggedInStatusDirective],
   exports: [NavbarComponent],
   imports: [RouterModule],
 })

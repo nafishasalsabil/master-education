@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarModule } from './layout/navbar/navbar.module';
-import { RouterModule } from '@angular/router';
-import { ServicesComponent } from './components/services/services.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
+import { LoginInterceptor } from './shared/login.interceptor';
+
 
 @NgModule({
   declarations: [
@@ -15,9 +16,29 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule, // Contains lazy-loaded routes
     NavbarModule, // Assuming NavbarModule is not lazy-loaded and used across the app
-    HttpClientModule
+    HttpClientModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi: true },
+    {
+      provide: 'SocialAuthServiceConfig',
+      useValue: {
+        autoLogin: false,
+        providers: [
+          {
+            id: GoogleLoginProvider.PROVIDER_ID,
+            provider: new GoogleLoginProvider(
+              'clientId'
+            )
+          }
+        ],
+        onError: (err) => {
+          console.error(err);
+        }
+      } as SocialAuthServiceConfig,
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

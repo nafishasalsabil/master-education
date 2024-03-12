@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-2">
                 <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
-                    <img src="/assets/images/edu-logo.jpg" alt="" class="d-inline-block align-text-top logo">
+                    <img src="/assets/images/edu-logo.png" alt="" class="d-inline-block align-text-top logo">
                   </a>
             </div>
             <div class="col-10 d-flex" style="justify-content: flex-end; align-items: center;">
@@ -22,9 +22,6 @@
                       <li class="nav-item">
                         <a class="nav-link" (click)="navigateAndScroll('services')" routerLinkActive="active">Services</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link" (click)="navigateAndScroll('destinations')" routerLinkActive="active">Destinations</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" (click)="navigateAndScroll('testimonials')" routerLinkActive="active">Testimonials</a>
                     </li>
@@ -34,12 +31,15 @@
                     </ul>
                    
                   </div>
-                  <div class="btn-class">
-                    <button class="btn log mx-2" type="submit" (click)="gotoLogin()">Login</button>
-                  </div>
-                  <div class="user-icon-container">
+                  <div class="user-icon-container mx-2" [appShowLoggedProfile] = "isLoggedIn">
                     <img class="user-icon" src="/assets/images/user.png">
                   </div>
+                  <div class="btn-class">
+                  
+                    <button [appShowLoggedProfile] = "isLoggedIn" class="btn log mx-2" type="button" (click)="logout()">Logout</button>
+                    <button [appShowLoggedProfile] = "!isLoggedIn" class="btn log mx-2" type="submit" (click)="gotoLogin()">Login</button>
+                  </div>
+              
                 
             
             </div>

@@ -12,7 +12,11 @@ $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
     width: 80%;
     max-width: 100%;
 }
-
+@media screen and (max-width:769px) {
+    .container-fluid{
+        width: 100%;
+    }
+}
 
 .dark {
     background: white;
@@ -155,6 +159,7 @@ a:hover {
     background-color: #4637e8;
     
 }
+
 
 @media screen and (min-width: 769px) {
     .postcard {

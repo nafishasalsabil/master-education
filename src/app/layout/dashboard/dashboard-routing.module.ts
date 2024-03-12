@@ -6,12 +6,9 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
-    // children: [
-    //   {
-    //     path: 'about-us',
-    //     loadChildren: () => import('../../components/about-us/about-us.module').then(m => m.AboutUsModule)
-    //   }
-    // ]
+    children: [
+      
+    ]
   }
 ];
 
