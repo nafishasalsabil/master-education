@@ -34,6 +34,16 @@ const routes: Routes = [
     loadChildren: () =>
       import('./components/destinations/destinations.module').then((m) => m.DestinationsModule),
   },
+  {
+    path: 'destination-detail/:id',
+    loadChildren: () =>
+      import('./components/destination-detail/destination-detail.module').then((m) => m.DestinationDetailModule),
+  },
+  {
+    path: 'apply',
+    loadChildren: () =>
+      import('./components/university-application-form/university-application-form.module').then((m) => m.UniversityApplicationFormModule),
+  },
 
  
 ];

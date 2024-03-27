@@ -1,0 +1,19 @@
+[
+    {
+        "title":"Visa Application & Immigration Support",
+        "url":"assets/images/visa.png"
+    },
+    {
+        "title":"Air Ticket Arrangement & Travel Logistics",
+        "url":"assets/images/ticket-flight.png"
+    }, {
+        "title":"Airport Pick-Up & Drop-Off Services",
+        "url":"assets/images/taxi.png"
+    }, {
+        "title":"Accommodation Assistance",
+        "url":"assets/images/hostel.png"
+    }, {
+        "title":"Scholarship & Financial Aid Guidance",
+        "url":"assets/images/degree.png"
+    }
+]

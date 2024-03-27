@@ -13,7 +13,7 @@ export class AppComponent {
   constructor(private router: Router) {
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
-        this.showNavbar = !(val.url.includes('login') || val.url.includes('signup'));;
+        this.showNavbar = (val.url.includes('home'));;
       }
     });
   }

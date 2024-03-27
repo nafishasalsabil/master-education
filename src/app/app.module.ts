@@ -6,11 +6,13 @@ import { NavbarModule } from './layout/navbar/navbar.module';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule } from '@abacritt/angularx-social-login';
 import { LoginInterceptor } from './shared/login.interceptor';
+import { UniversityApplicationFormComponent } from './components/university-application-form/university-application-form.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

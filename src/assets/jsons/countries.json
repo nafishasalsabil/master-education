@@ -1,25 +1,44 @@
 [
-    {
-        "title":"USA",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium..."
-    },
-    {
-        "title":"UK",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium..."
-    },{
-        "title":"Canada",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium..."
-    },{
-        "title":"Austrailia",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium..."
-    },{
-        "title":"New Zealand",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium..."
-    },{
-        "title":"UAE",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium..."
-    },{
-        "title":"Malaysia",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad alias, aliquid amet aspernatur atque culpa cum debitis dicta doloremque, dolorum ea eos et excepturi explicabo facilis harum illo impedit incidunt laborum laudantium..."
-    }
+  {
+    "id": 1,
+    "title": "USA",
+    "description": "The USA hosts a diverse range of top-ranking universities, offering unparalleled research opportunities and variety of programs. Its cultural diversity and vibrant campus life make it a prime destination for international students.",
+    "url":"assets/images/usa-dest.jpg"
+  },
+  {
+    "id": 2,
+    "title": "UK",
+    "description": "Renowned for its prestigious universities and rigorous academic standards, the UK offers a rich historical backdrop for education, with the added advantage of shorter degree courses compared to other countries.",
+    "url":"assets/images/uk-dest.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Canada",
+    "description": "Canada is known for its high-quality education system, welcoming community, and opportunities for post-study work. It's an ideal choice for students seeking a multicultural environment and a high standard of living.",
+    "url":"assets/images/canada-dest.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Australia",
+    "description": "Australia is famous for its world-class universities, research opportunities, and the quality of life. Students can enjoy a vibrant multicultural atmosphere, alongside excellent work opportunities during and after their studies.",
+    "url":"assets/images/aus-dest.jpg"
+  },
+  {
+    "id": 5,
+    "title": "New Zealand",
+    "description": "New Zealand stands out for its stunning natural landscapes, friendly atmosphere, and innovative teaching methods. It's a perfect destination for students who appreciate outdoor activities alongside a robust education system.",
+    "url":"assets/images/nz-dest.jpg"
+  },
+  {
+    "id": 6,
+    "title": "UAE",
+    "description": "The UAE combines quality education with cultural diversity, offering cutting-edge academic programs in modern campuses. It’s an ideal destination for students seeking a blend of traditional values and contemporary educational practices in a dynamic environment.",
+    "url":"assets/images/uae-dest.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Malaysia",
+    "description": "Malaysia is emerging as a preferred affordable education hub in Asia, offering a wide range of English-taught programs and a unique cultural experience. Its strategic location also makes it a gateway to explore Southeast Asia.",
+    "url":"assets/images/malaysia-dest.jpg"  
+  }
 ]

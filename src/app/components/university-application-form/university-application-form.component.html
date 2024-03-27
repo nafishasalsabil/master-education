@@ -1,0 +1,280 @@
+<div class="container-fluid p-4">
+    <div class="heading mt-4">
+        <h1>Application form</h1>
+    </div>
+    <hr/>
+  
+      
+   
+    <form [formGroup]="applicationForm">
+        <div class="row img-row">
+            <div class="img-con">
+                <img id="selectedImage" src="assets/images/user-img.png"
+                alt="example placeholder" width="192" height="auto" />
+            </div>
+            <div class="col-4">
+                <div class="form-group mb-3">
+                    <label for="photo">Upload Image</label>
+                    <input type="file" id="photo" class="form-control form-control-lg" formControlName="photo" (change)="displaySelectedImage($event, 'selectedImage')">
+                    <span *ngIf="!applicationForm.get('photo')?.valid && applicationForm.get('photo')?.touched" class="help-block" >
+                        Please uploadn your image!
+                    </span>
+                </div>
+            </div>
+        </div>
+       
+        <h2>Personal Information</h2>
+        <hr/>
+        <div class="personal-info-container px-2">
+        <div class="row name-row">
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control form-control-lg" formControlName="name" placeholder="Enter your name">
+                    <span *ngIf="!applicationForm.get('name')?.valid && applicationForm.get('name')?.touched" class="help-block" >
+                        Please enter a name!
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <label for="name">E-mail</label>
+                <input type="email" id="email" class="form-control form-control-lg" formControlName="email" placeholder="Enter email">
+                <span *ngIf="!applicationForm.get('email')?.valid && applicationForm.get('email')?.touched" class="help-block" >
+                    Please enter your e-mail!
+                </span>
+            </div>
+        </div>
+        
+
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="gender">Gender</label>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="text-align: center;" formControlName="gender">
+                        <option selected disabled value="">Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                      </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" class="form-control form-control-lg" formControlName="dob">
+                    <span *ngIf="!applicationForm.get('dob')?.valid && applicationForm.get('dob')?.touched" class="help-block" >
+                        Please enter a date!
+                    </span>
+                </div>
+            </div>
+        </div>
+       
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="name">Nationality</label>
+                    <input type="text" id="nationality" class="form-control form-control-lg" formControlName="nationality" placeholder="Enter nationality">
+                    <span *ngIf="!applicationForm.get('nationality')?.valid && applicationForm.get('nationality')?.touched" class="help-block" >
+                        Please enter nationality!
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="lastName">Contact</label>
+                    <input type="number" id="contact" class="form-control form-control-lg" formControlName="contact" placeholder="Enter contact">
+                    <span *ngIf="!applicationForm.get('contact')?.valid && applicationForm.get('contact')?.touched" class="help-block" >
+                        Please enter a last name!
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group mb-3">
+          
+                    <label for="name">Permanent Address</label>
+                    <input type="text" id="address" class="form-control form-control-lg" formControlName="address" placeholder="Enter address">
+                    <span *ngIf="!applicationForm.get('address')?.valid && applicationForm.get('address')?.touched" class="help-block" >
+                        Please enter a first name!
+                    </span>
+              
+          
+        </div>
+    </div>
+        <hr/>
+        <div class="academic-info-container px-2">
+            <div class="academic-heading">
+                <h2 for="degreeList" class="form-label mt-3">Academic Background</h2>
+                <div class="imgClass">
+                    <span class="mx-1">New Degree</span>
+                    <img src="assets/images/add.png" (click)="onAddUser()" class="addImg">
+                </div>
+              
+            </div>
+           
+        <hr class="mt-0"/>
+        <div formArrayName="degreeList" *ngIf="applicationForm">
+            <div class="form-group mb-1" *ngFor="let degreeControl of degreeFromControl.controls; let i=index"
+            formGroupName="{{i}}">
+            <div class="row mb-1" *ngIf="i>0">
+                <div class="academic-heading">
+                    <h5>Degree {{i+1}}</h5>
+                    <div class="imgClass">
+                        
+                        <img src="assets/images/del.png" (click)="removeUser(i)"  class="delImg">
+                    </div>
+                </div>
+                <hr class="mt-1"/>
+                
+            </div>
+       
+        <div class="row">
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="degree">Degree Name</label>
+                    <input type="text" id="degree" class="form-control form-control-lg" formControlName="degree" placeholder="Enter degree name">
+                    <span *ngIf="!applicationForm.get('degree')?.valid && applicationForm.get('degree')?.touched" class="help-block" >
+                        Please enter degree name!
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="institution">Institution</label>
+                    <input type="text" id="institution" class="form-control form-control-lg" formControlName="institution" placeholder="Enter institution name">
+                    <span *ngIf="!applicationForm.get('institution')?.valid && applicationForm.get('institution')?.touched" class="help-block" >
+                        Please enter a last name!
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="passingYear">Year of Passing</label>
+                    <input type="number" id="passingYear" class="form-control form-control-lg" formControlName="passingYear" placeholder="Enter passing year">
+                    <span *ngIf="!applicationForm.get('passingYear')?.valid && applicationForm.get('passingYear')?.touched" class="help-block" >
+                        Please enter passing year!
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="cgpa">CGPA</label>
+                    <input type="number" id="cgpa" class="form-control form-control-lg" formControlName="cgpa" placeholder="Enter cgpa">
+                    <span *ngIf="!applicationForm.get('cgpa')?.valid && applicationForm.get('cgpa')?.touched" class="help-block" >
+                        Please enter a last name!
+                    </span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="certificate">Certificate (PDF)</label>
+                    <input type="file" id="certificate" class="form-control form-control-lg" formControlName="certificate" placeholder="Upload">
+                    <span *ngIf="!applicationForm.get('certificate')?.valid && applicationForm.get('certificate')?.touched" class="help-block" >
+                        You must upload certificate!
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+        <hr/>
+        <div class="program-selection-container px-2 mt-2">
+            <h2>Academic Program Preferences</h2>
+            <hr class="mt-0"/>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group mb-3">
+                        <label for="program">Program</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="text-align: center;" formControlName="program">
+                            <option selected disabled value="">Select Program</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group mb-3">
+                        <label for="session">Academic Session</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" style="text-align: center;" formControlName="session">
+                            <option selected disabled value="">Select Session</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                          </select>
+                        <span *ngIf="!applicationForm.get('session')?.valid && applicationForm.get('session')?.touched" class="help-block" >
+                            Please enter a date!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="recommendation-container px-2 mt-2">
+            <div class="academic-heading">
+                <h2 for="degreeList" class="form-label mt-3">Recommendations</h2>
+                <div class="imgClass">
+                    <span class="mx-1">New Recommendation</span>
+                    <img src="assets/images/add.png" (click)="onAddRec()" class="addImg">
+                </div>
+              
+            </div>
+            <hr class="mt-0"/>
+            <div formArrayName="recommendationList">
+                <div class="form-group mb-1" *ngFor="let recommendationControl of recommendationFormControl.controls; let i=index"
+                formGroupName="{{i}}">
+                <div class="row mb-1" *ngIf="i>0">
+                    <div class="academic-heading mt-1">
+                        <h5>Recommendation {{i+1}}</h5>
+                        <div class="imgClass">
+                            
+                            <img src="assets/images/del.png" (click)="removeRec(i)"  class="delImg">
+                        </div>
+                    </div>
+                    <hr class="mt-1"/>
+                    
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group mb-3">
+                            <label for="profName">Name</label>
+                            <input type="text" id="profName" class="form-control form-control-lg" formControlName="profName" placeholder="Enter name">
+                            <span *ngIf="!applicationForm.get('profName')?.valid && applicationForm.get('profName')?.touched" class="help-block" >
+                                Please enter name!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group mb-3">
+                            <label for="designation">Designation</label>
+                            <input type="text" id="designation" class="form-control form-control-lg" formControlName="designation" placeholder="Enter designation">
+                            <span *ngIf="!applicationForm.get('designation')?.valid && applicationForm.get('designation')?.touched" class="help-block" >
+                                Please enter designation!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group mb-3">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="lastName" class="form-control form-control-lg" formControlName="email" placeholder="Enter email">
+                            <span *ngIf="!applicationForm.get('email')?.valid && applicationForm.get('email')?.touched" class="help-block" >
+                                Please enter email!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+         
+        </div>
+        <hr/>
+        <button class="btn apply-btn mt-2">Apply</button>
+    </form>
+
+</div>

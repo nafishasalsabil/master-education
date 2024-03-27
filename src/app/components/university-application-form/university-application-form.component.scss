@@ -1,0 +1,52 @@
+.heading{
+    text-align: center;
+}
+hr{
+    color:rgb(230, 230, 230);
+}
+.container-fluid{
+    width: 80%;
+}
+.academic-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.academic-heading h5{
+    color: #211699;
+}
+.addImg{
+    width: 18px;
+}
+.delImg{
+    width: 15px;
+}
+.imgClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.apply-btn {
+    background-color: #261E83;
+    color: white;
+    // font-size: large;
+    width: 20%;
+}
+// .name-row{
+//     align-items: flex-end;
+// }
+.img-con{
+    text-align: right;
+    
+}
+#selectedImage{
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 5px;
+    padding: 0.2em;
+}
+.help-block{
+    color: rgb(199, 4, 4);
+}
+.img-row{
+    flex-direction: row-reverse;
+}
