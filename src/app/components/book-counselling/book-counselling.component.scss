@@ -1,0 +1,141 @@
+.selected-date-display {
+    padding: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #261E83;
+}
+
+.selected-date {
+    background-color: #261E83;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.selected-day {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.selected-month-year {
+    font-size: 18px;
+}
+
+
+.calendar {
+    font-family: 'Arial', sans-serif;
+    max-width: 75%;
+    margin: 0 auto;
+    height: 62vh;
+    // display: flex;
+    // flex-direction: row;
+    // align-items: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.calendar-header span {
+    cursor: pointer;
+}
+
+.day-names {
+    display: flex;
+    width: 100%;
+}
+
+.day-names div {
+    flex: 1;
+    text-align: center;
+    padding: 5px;
+    background-color: #e4e4e4;
+}
+
+.calendar-dates {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.date {
+    flex-basis: calc(100% / 7);
+    flex-grow: 1;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.date:hover {
+    background-color: #e4e4e4;
+}
+
+.new-row {
+    clear: left;
+}
+
+hr {
+    color: rgb(230, 230, 230);
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-weight: bold;
+}
+
+.container-fluid {
+    width: 85%;
+}
+
+.next-btn {
+    background-color: #261E83;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-cont {
+    justify-content: center;
+    text-align: center;
+}
+.col-9{
+    background-color: #fcfcfc;
+}
+
+@media (max-width: 600px) {
+    .date {
+        height: 60px;
+    }
+}
+
+/* Responsive and highlighting selected date */
+/* This is an example, actual implementation requires JS/TS */
+.date.selected {
+    background-color: #261E83;
+    color: white;
+}
+.current-date {
+    background-color: #cf881c; /* Example: Orange background */
+    color: white; 
+  }
+.num-img{
+    width: 5rem;
+    height: auto;
+}
+  

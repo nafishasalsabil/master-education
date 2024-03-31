@@ -23,6 +23,9 @@ export class ServicesComponent implements OnInit{
     if(title=='International Academic Placement Solutions'){
       this.router.navigate(['/destinations']);
     }
+    else if(title=='Professional Academic Guidance & Mentorship'){
+      this.router.navigate(['/book-counselling']);
+    }
   }
 
 }

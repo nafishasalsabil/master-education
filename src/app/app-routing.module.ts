@@ -44,6 +44,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./components/university-application-form/university-application-form.module').then((m) => m.UniversityApplicationFormModule),
   },
+  {
+    path: 'book-counselling',
+    loadChildren: () =>
+      import('./components/book-counselling/book-counselling.module').then((m) => m.BookCounsellingModule),
+  },
 
  
 ];

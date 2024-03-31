@@ -1,0 +1,59 @@
+<div class="container-fluid">
+    <div class="date-section">
+        <div class="row heading mt-4 mb-4">
+            <h1>Book Your Slot of Counselling</h1>
+            <hr />
+        </div>
+
+        <div class="row px-2 mt-4 mb-4">
+        <img class="num-img" src="assets/images/one.png">
+        </div>
+        <div class="calendar-container">
+
+            <div class="row calendar">
+                <div class="col-2 selected-date-display" *ngIf="currentDate">
+                    <div class="selected-date">
+                        <div class="selected-day">{{ currentDate.getDate() }}</div>
+                        <div class="selected-month-year">
+                            {{ monthNames[currentDate.getMonth()] }} - {{ currentDate.getFullYear() }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="calendar-header">
+                        <span (click)="goToPreviousMonth()">&laquo;</span>
+                        <span>{{ monthNames[currentMonth] }} {{ currentYear }}</span>
+                        <span (click)="goToNextMonth()">&raquo;</span>
+                    </div>
+                    <div class="day-names">
+                        <div *ngFor="let dayName of dayNames">{{ dayName }}</div>
+                    </div>
+                    <div class="calendar-dates">
+                        <!-- Filler divs for empty days at the start of the month -->
+                        <div class="row">
+                            <div *ngFor="let empty of [].constructor(emptyDaysAtStart); let i = index"
+                                class="col date empty"></div>
+                            <!-- Actual month days -->
+                            <div *ngFor="let day of daysInMonth; let i = index" class="col date"
+                                [ngClass]="{'selected': isSelectedDay(day),
+                                'current-date': isToday(day),
+                                 'new-row': i % 7 === 0}"
+                                (click)="selectDate(day)">
+                                {{ day.getDate() }}
+                            </div>
+                            <div *ngFor="let empty of [].constructor(emptyDaysAtEnd); let i = index"
+                                class="col date empty"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="time-section">
+        <div class="row px-2 mt-4 mb-4">
+            <img class="num-img" src="assets/images/two.png">
+            </div>
+    </div>
+</div>
